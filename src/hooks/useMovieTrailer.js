@@ -8,7 +8,7 @@ const useMovieTrailer = (movideId) => {
     const getMovideVideos = async ()=> {
         const data = await fetch("https://api.themoviedb.org/3/movie/"
             +movideId+
-            "/videos?language=en-US', API_OPTIONS")
+            "/videos?language=en-US", API_OPTIONS)
         const json = await data.json();
 
         const filterData = json.results.filter((video) => video.type === "Trailer");

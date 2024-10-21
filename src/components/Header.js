@@ -48,7 +48,7 @@ const Header = () => {
         src = {LOGO}
         alt='NetFlix logo'
         />
-        <div className='flex m-4 font-bold'>
+        <div className='flex m-4 font-bold text-white bg-red-600 px-4 rounded-md'>
         <button onClick={handleSignOut}>SignOut</button>
         </div>
     </div>
