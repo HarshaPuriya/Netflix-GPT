@@ -4,6 +4,7 @@ import { checkValiddata } from '../utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../utils/firebase";
 import {updateProfile } from "firebase/auth";
+import { LOGO } from '../utils/constants';
 
 
 const Login = () => {
