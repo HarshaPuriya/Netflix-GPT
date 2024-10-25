@@ -4,8 +4,7 @@ import { checkValiddata } from '../utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../utils/firebase";
 import {updateProfile } from "firebase/auth";
-import { LOGO } from '../utils/constants';
-
+import { BG_URL } from '../utils/constants';
 
 const Login = () => {
 
@@ -69,7 +68,7 @@ const Login = () => {
     <Header/>
     <div className='absolute'>
         <img className='bg-transparent'
-        src="https://assets.nflxext.com/ffe/siteui/vlv3/f272782d-cf96-4988-a675-6db2afd165e0/web/IN-en-20241008-TRIFECTA-perspective_b28b640f-cee0-426b-ac3a-7c000d3b41b7_small.jpg"
+        src={BG_URL}
         alt="backgroundImage"/>
     </div>
     <form onSubmit={(e)=> e.preventDefault()} className='mx-auto p-12 bg-black bg-opacity-80 w-3/12 absolute my-24 right-0 left-0'>
